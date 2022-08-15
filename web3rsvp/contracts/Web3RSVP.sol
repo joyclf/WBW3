@@ -194,7 +194,7 @@ contract Web3RSVP {
         // send the payout to the owner
         (bool sent, ) = msg.sender.call{value: payout}("");
 
-        // if this fails
+        // if this fails.
         if (!sent) {
             myEvent.paidOut = false;
         }
